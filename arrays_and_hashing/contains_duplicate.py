@@ -3,6 +3,7 @@
 
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
+        # Map approach, if value exists return false
 
         numbers = []
 
