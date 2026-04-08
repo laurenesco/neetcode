@@ -1,3 +1,6 @@
+// Memory: 148.5 MB•Time: 2ms•Submitted at: 04/08/2026 13:48
+// Beats 93.17% in runtime, 88.5% in memory
+
 #include <map>
 #include <algorithm>
 
