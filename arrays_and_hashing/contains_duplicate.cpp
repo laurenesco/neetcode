@@ -1,3 +1,6 @@
+// Memory: 150.8 MB•Time: 2ms•Submitted at: 04/08/2026 13:46
+// Beats 93.17% in runtime, 5.77% in memory
+
 #include <map>
 #include <algorithm>
 
@@ -6,7 +9,6 @@ using namespace std;
 class Solution {
 public:
     bool hasDuplicate(vector<int>& nums) {
-        // Approach 1
         // Use map to track occurences of values in array
         // Return true if any value of map increments to 2
 
