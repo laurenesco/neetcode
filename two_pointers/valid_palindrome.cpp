@@ -1,5 +1,5 @@
-// Memory: 104.7 MB•Time: 2ms•Submitted at: 04/24/2026 14:49
-// Beats 92.08 in runtime, 95.22% in memory
+// Memory: 104.3 MB•Time: 1ms•Submitted at: 04/24/2026 15:07
+// Beats 100 in runtime, 100% in memory
 
 using namespace std;
 
@@ -14,22 +14,21 @@ public:
             return true;
         }
 
-        // Ignore special character at start 
-        while (!isalnum(*start) && start < end) {
-            start ++;
-        }
-
-        // Array is all special character case
-        if (start == end) {
-            return true;
-        }
-
-        // Ignore special characters at end
-        while (!isalnum(*end)) {
-            end --;
-        }
-
         while (start < end) {
+
+            // Ignore special characters
+            while (!isalnum(*start) && start < end) {
+                start ++;
+            }
+
+            if (start == end) {
+                return true;
+            }
+
+            // Ignore special characters
+            while (!isalnum(*end) && end > start) {
+                end --;
+            }
 
             // Run the comparison
             if (tolower(*start) != tolower(*end))  {
@@ -39,15 +38,6 @@ public:
             // Move the pointers
             start ++;
             end --;
-
-            // Ignore special characters
-            while (!isalnum(*start)) {
-                start ++;
-            }
-
-            while (!isalnum(*end)) {
-                end --;
-            }
 
         }
 
