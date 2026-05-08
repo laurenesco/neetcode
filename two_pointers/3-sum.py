@@ -1,5 +1,3 @@
-# IN PROGRESS
-
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         result = []
@@ -9,27 +7,54 @@ class Solution:
         if len(nums) == 0:
             return result
 
-        # 1 triplet, != 0 case
-        if len(nums) == 3 and sum(nums) != 0:
-            return result
+        for i in range(len(nums) - 2):
+            value = nums[i]
 
-        # Loop with 2 pointers
-        for i, value in enumerate(nums):
             # Once we hit positives, zero sum not possible
-            if value >= 0:
+            if value > 0:
                 break;
 
             # Skip duplicates
             if i > 0 and nums[i-1] == value:
                 continue;
 
-            # Evaluate 2 sum against nums[i]
-            for j in range(i + 1, len(nums) - 1):
-                k = j + 1
-                while k < len(nums):
-                    if nums[j] + nums[k] == -(nums[i]):
-                        result.append([nums[i], nums[j], nums[k]])
-                    k += 1
+            # Set pointer at smallest and largest remaining digits
+            l = i + 1
+            r = len(nums) - 1
 
+            # Check the sums!
+            while l < r:
+                threeSum = nums[l] + nums[r] + value
+
+                # If the sum works
+                if (threeSum == 0):
+                    result.append([nums[l], nums[r], value])
+
+                    # Increment 
+                    if r > l:
+                        r -= 1
+
+                    if l < r:
+                        l += 1
+
+                    # Skip duplicates
+                    if nums[r] == nums[r-1]:
+                        print("DUPLICATE R")
+                        while r > l and nums[r] == nums[r-1]:
+                            r -= 1
+
+                    # Skip duplicates
+                    if nums[l] == nums[l+1]:
+                        print("DUPLICATE L")
+                        while l < r and nums[l] == nums[l+1]:
+                            l += 1
+
+                # If sum too large
+                if threeSum > 0:
+                    r -= 1
+
+                # If sum too small
+                if threeSum < 0:
+                    l += 1
 
         return result
