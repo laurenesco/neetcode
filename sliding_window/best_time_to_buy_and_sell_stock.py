@@ -1,3 +1,6 @@
+# Memory: 8 MB•Time: 48ms•Submitted at: 07/15/2026 13:25
+# Beats 100% in runtime, 97.2% in memory
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         profit = 0
