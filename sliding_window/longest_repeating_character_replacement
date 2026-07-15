@@ -1,5 +1,5 @@
 # Memory: 7.7 MB•Time: 28ms•Submitted at: 07/15/2026 16:06
-#
+# Beats 100% in runtime, 97.2% in memory
 
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
