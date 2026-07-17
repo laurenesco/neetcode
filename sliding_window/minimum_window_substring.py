@@ -1,4 +1,6 @@
 # Memory: 7.9 MB•Time: 29ms•Submitted at: 07/17/2026 18:14
+# Beats 100% in runtime, 80.27% in memory
+
 
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
