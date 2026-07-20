@@ -1,6 +1,10 @@
 # Memory: 7.7 MB•Time: 28ms•Submitted at: 05/08/2026 13:18
 # Beats 100% in runtime, 100% in memory
 
+# You are given an integer array heights where heights[i] represents the height of the ith bar.
+
+# You may choose any two bars to form a container. Return the maximum amount of water a container can store.
+
 class Solution:
     def maxArea(self, heights: List[int]) -> int:
 
