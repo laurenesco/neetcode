@@ -1,6 +1,12 @@
 # Memory: 8 MB•Time: 27ms•Submitted at: 04/20/2026 12:57
 # Beats 100% in runtime, 56.34% in nmemory
 
+# Given an array of integers nums, return the length of the longest consecutive sequence of elements that can be formed.
+
+# A consecutive sequence is a sequence of elements in which each element is exactly 1 greater than the previous element. The elements do not have to be consecutive in the original array.
+
+# You must write an algorithm that runs in O(n) time.
+
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         result = 0
