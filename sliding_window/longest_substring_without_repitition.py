@@ -1,6 +1,10 @@
 # Memory: 7.7 MB•Time: 38ms•Submitted at: 07/17/2026 12:52
 # Beats 100% in runtime, 99.6% in memory
 
+# Given a string s, find the length of the longest substring without duplicate characters.
+
+# A substring is a contiguous sequence of characters within a string.
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
 
