@@ -1,6 +1,10 @@
 # Memory: 8.7 MB•Time: 57ms•Submitted at: 04/08/2026 14:18
 # Beats 100% in runtime, 20.87% in memory
 
+# Given an array of strings strs, group all anagrams together into sublists. You may return the output in any order.
+
+# An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
+
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         # Create hash map where
