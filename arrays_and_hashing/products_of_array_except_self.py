@@ -1,6 +1,10 @@
 # Memory: 7.7 MB•Time: 28ms•Submitted at: 04/17/2026 14:22
 # Beats 100% in runtime, 100% in memory
 
+# Given an integer array nums, return an array output where output[i] is the product of all the elements of nums except nums[i].
+
+# Each product is guaranteed to fit in a 32-bit integer. 
+
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         total_sum = 1
