@@ -1,6 +1,12 @@
 # Memory: 8 MB•Time: 27ms•Submitted at: 04/13/2026 15:12
 # Beats 99.99% at runtime, 78.34% at memory
 
+# Given an integer array nums and an integer k, return the k most frequent elements within the array.
+
+# The test cases are generated such that the answer is always unique.
+
+# You may return the output in any order.
+
 from collections import Counter
 
 class Solution:
